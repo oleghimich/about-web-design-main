@@ -4,10 +4,25 @@
     <meta charset="utf-8" />
     <title>Коротко про вебдизайн</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body>
-    <section class="welcome">
+    <nav class="main-nav">
+      <div class="nav-logo">Вебдизайн</div>
+      <ul class="nav-links">
+        <li><a href="#welcome">Вітальне відео</a></li>
+        <li><a href="#about">Технології</a></li>
+        <li><a href="#tags">Теги</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome" class="welcome">
       <video autoplay muted loop playsinline class="background-video">
         <source src="video/intro.mp4" type="video/mp4" />
         Ваш браузер не підтримує відео фон.
@@ -15,7 +30,7 @@
       <h1 class="content">Коротко про вебдизайн</h1>
     </section>
 
-    <section>
+    <section id="about">
       <div class="container">
         <div class="image_container">
           <img src="image/HTML.png" alt="Зображення HTML" />
@@ -63,7 +78,7 @@
       </div>
     </section>
 
-    <section class="tags">
+    <section id="tags" class="tags">
       <h2>Теги</h2>
 
       <div class="tag-container">
@@ -94,5 +109,36 @@
         </div>
       </div>
     </section>
+
+    <footer id="contacts">
+      <div class="footer-main">
+        <div class="footer-block">
+          <h3>Навігація</h3>
+          <ul>
+            <li><a href="#welcome">Вітальне відео</a></li>
+            <li><a href="#about">Технології вебдизайну</a></li>
+            <li><a href="#tags">Пояснення тегів</a></li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h3>Про сайт</h3>
+          <p>
+            Сайт створено для ознайомлення з основами вебдизайну, HTML, CSS та JavaScript.<br>
+            Матеріали можна копіювати та використовувати без дозволу автора.
+          </p>
+        </div>
+        <div class="footer-block">
+          <h3>Контакти</h3>
+          <ul>
+            <li>Хіміч Олег</li>
+            <li><a href="mailto:pzs_shvm@zfu.edu.ua" target="_blank">24d_khoo@liceum.ztu.edu.ua</a></li>
+            <li><a href="https://github.com/GilHub_*.x" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <b>Хіміч Олег</b> | Сайт "Коротко про вебдизайн"
+      </div>
+    </footer>
   </body>
 </html>
