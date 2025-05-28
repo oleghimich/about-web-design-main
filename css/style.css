@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d5faff;
+  color: #000;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: #b6ffc2;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: top;
+  overflow-y: scroll;
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 5px #330022;
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container img {
+  width: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Відео секція */
+.welcome {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome .content {
+  position: relative;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Секція з блоками HTML/CSS/JS */
+section:nth-of-type(2) {
+  background-color: #7eff87;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.more_info {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+/* Секція Теги */
+.tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #d5faff;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  background-color: #7eff87;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+.tag-title {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  background-color: #1b2c3b;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tag-description {
+  display: none;
+  text-align: left;
+  animation: slideInFromRight 0.5s ease-out;
+  max-width: 100%;
+}
+
+.tag-container:hover .tag-description {
+  display: inline-block;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
